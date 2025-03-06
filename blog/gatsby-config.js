@@ -1,19 +1,32 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
+ */
+
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    title: `Gatsby Blog`,
+    title: `Gatsby Blog!!`,
     description: ``,
     author: `Diego Ramirez`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
-      name: 'Diego Ramirez' ,
-      company: 'Blogs Inc.' ,
-      address: 'Po Box 1234'
+      name: `Diego Ramirez`,
+      company: `Blogs Inc...`,
+      address: `PO Box 1234`
     }
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `31ejznw0dbgh`,
+        accessToken: `2XnvHpA-YIgvXI2ar5rv_6mH4FeC3YPZepKnc0xB7Ww`
+      }
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
