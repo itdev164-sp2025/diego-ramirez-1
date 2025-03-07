@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
+
 require(`dotenv`).config({
   path: `.env.${process.env.NODE_ENV}`
 })
@@ -17,9 +18,9 @@ module.exports = {
     author: `Diego Ramirez`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
-      name: 'Diego Ramirez',
-      company: 'Blogs Inc.',
-      address: 'Po Box 1234'
+      name: `Diego Ramirez`,
+      company: `Blogs Inc.`,
+      address: `PO Box 1234`
     }
   },
   plugins: [
@@ -31,7 +32,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-image`,
-    'gatsby-plugin-styled-components',
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
