@@ -10,7 +10,7 @@ const { name, company } = data.site.siteMetadata.contact
 
 return (
     <Layout>
-    <Seo title="About Us" />
+    <Seo title="More about Us..." />
     <h1>About Us</h1>
     <p>{`${company} was started by ${name} in 2025.`}</p>
     <p>{`At ${company} we just make blogs!`}</p>
